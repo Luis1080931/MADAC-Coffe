@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+    font-weight: 700;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: #D2B48C;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #CD853F;
+}
