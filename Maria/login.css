@@ -1,0 +1,57 @@
+/* Estilos generales */
+body {
+    background: url(img/2.avif) no-repeat;
+    background-size: 100% 100%;
+    font-family: bitter, cursive;
+    background-color: #a4e5ffc2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+/* Contenedor de inicio de sesión */
+.login-container {
+    background: transparent;
+    padding: 30px;
+    border-radius: 1px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+   
+}
+
+/* Estilos para etiquetas de formulario */
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Estilos para campos de formulario */
+.form-group input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 30px;
+     border: 1px solid #775a5a; 
+    border-radius: 1px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(94, 59, 59);
+}
+
+/* Estilos para el botón de inicio de sesión */
+.form-group button {
+    background-color: #7c635a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #978976;
+}
