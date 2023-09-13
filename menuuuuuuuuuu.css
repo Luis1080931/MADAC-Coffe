@@ -23,14 +23,38 @@ header{
     background-color: rgb(101, 114, 232);
     position: fixed;
     height: 100vh;
-    width: 320px;
+    width: 350px;
 }
+#Buscador {
+    z-index: 3;
+    background: url(https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png) no-repeat 0px 5px;
+    background-size: 24px;
+    width: 500px;
+    border: transparent;
+    border-bottom: solid 1px #ffffff;
+    padding: 10px 10px 10px 30px;
+    outline: none;
+    margin-left: 360px;
+    
+  }
 .logo{
+    background:url(../dibujar-cafe-kawaii-paso-a-paso.jpg);
     height: 160px;
     margin: 20px 20px;
     width: 280px;
     border-bottom: 1px solid white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+}
+.arriba{
+    grid-area: header;
+    position: fixed;
+    height: 100px;
+    background-color: rgb(214, 202, 202);
+    width: 100%;
+    color: white;
 }
 .box-menu{
     list-style: none;
@@ -90,7 +114,101 @@ input[type="number"]{
     margin-top: 15px;
     border-radius: 15px;
 }
-
+@media (max-width: 1250px) {
+    .page-content{
+        display: grid;
+        grid-template:"main-menu header " 100px
+                       "main-menu main-content" /
+                       320px     1fr;
+    
+        background-color: rgb(240, 240, 240);
+        height: 100vh;
+    }
+    header{
+        grid-area: header;
+        position: fixed;
+        height: 100px;
+        background-color: rgb(200, 200, 200);
+        width: 100%;
+    }
+    .main-menu{
+        grid-area: main-menu;
+        background-color: rgb(101, 114, 232);
+        position: fixed;
+        height: 100vh;
+        width: 350px;
+    }
+    .logo{
+        background:url(../dibujar-cafe-kawaii-paso-a-paso.jpg);
+        height: 160px;
+        margin: 10px 10px;
+        width: 280px;
+        border-bottom: 1px solid white;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+    .box-menu{
+        list-style: none;
+        font-size: 1.3em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    .box-menu > li{
+        line-height: 60px;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .text-item-menu{
+        margin-left: 12px;
+    }
+    
+    .main-content{
+        grid-area:main-content;
+        padding-top: 50px;
+        display: grid;
+        grid-template:"empty-left mi-form empty-right"/
+                        1fr 700px 1fr ;
+    }
+    .mi-form{
+        grid-area: mi-form;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        height: fit-content;
+    }
+    .box-input{
+        margin-top: 70px;
+    }
+    input[type="text"]{
+        width: 300px;
+        height: 60px;
+        border: gray;
+        margin-top: 15px;
+        border-radius: 15px;
+    }
+    input[type="date"]{
+        width: 300px;
+        height: 60px;
+        border: gray;
+        margin-top: 15px;
+        border-radius: 15px;
+    }
+    input[type="number"]{
+        width: 300px;
+        height: 60px;
+        border: gray;
+        margin-top: 15px;
+        border-radius: 15px;
+        
+    }  
+}
 
 
 
