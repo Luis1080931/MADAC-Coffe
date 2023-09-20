@@ -64,7 +64,7 @@ a:hover {
     padding-top: 50px;
     display: grid;
     grid-template: "emptly-letf mi-form emptly-right" /
-                    1fr         1100px  1fr;
+                    1fr         800px     1fr;
 }
 .mi-form {
     grid-area: mi-form;
@@ -74,9 +74,13 @@ a:hover {
     justify-content: space-between;
     height: fit-content;
 }
-input[type="text"]{
-    width: 200px;
+input[type="text"], input[type="number"]{
+    display: block;
+    padding: 3px;
+    width: 300px;
     height: 40px;
     border: rgb(6, 255, 255);
     border-radius: 20px;
+    margin: 20px 20px 20px 0;
+    outline: none;/* sirve para quitarle el  borde al input */
 }

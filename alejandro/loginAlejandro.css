@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(img/CAFE.JPG);
+    background-repeat: no-repeat;/* no se repita la img */
+    background-position: center;/* centrar */
+    background-attachment: fixed;/* para que no se mueva la img y no cree desplacimiento */
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+}
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    width: 300px;
+    height: 500px;
+    transform: translate(235%, 34% );
+    backdrop-filter: blur(3px);/* hace que el div se haga como borroso */
+    background-color:rgb(255,255,255,0.7);
+}
+a{
+    font-size: 0.7em;
+    text-decoration: none;
+    display: inline;
+}
+input {
+    outline: none;
+    border: none;/* sirve para qutarle el otro border */
+    padding-bottom: 30px;
+    background-color: transparent;
+    margin: 6px;
+    border-radius: 10px;
+}
+::placeholder {
+    justify-content: center;
+}
+#input1 {
+    margin-top: 40px;
+}
+img {
+    border-radius: 50%;
+}
+button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: rgb(220, 219, 219);
+    border-radius: 30px;
+    font-weight: bold;
+}
+button:hover {
+    cursor: pointer;
+}
+
