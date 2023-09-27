@@ -64,11 +64,13 @@ form button{
     background: linear-gradient(to right, #d35fe2, #b973f3,#df89eb);
     padding: 10px 10px;
     cursor: pointer;
+    border-radius: 8px;
     font-size: 20px;
 }
 form button:hover{
     color: #ffff;
     border: none;
+    border-radius: 8px;
     background: linear-gradient(to right, #e392ee, #d0a0f7,#eab3f1);
     padding: 10px 10px;
     cursor: pointer;
