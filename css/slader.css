@@ -16,7 +16,7 @@ header{
     transition:left 1200ms ;
 }
 body{
-    background: linear-gradient(to right, #ff8800, #e99957, #f0b879, #e0b082); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #5900ff, #2b06ff, #600bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
 }
 
@@ -25,13 +25,14 @@ body{
     overflow: hidden;
 }
 .box-img1{
-    padding: 0 600px ;
+    padding: 0 500px;
+   
 }
 .box-img2{
     padding: 0 600px;
 }
 .box-img3{
-    padding: 0 600px;
+    padding: 0 500px;
 }
 .box-slider-1{
     left: 0%;
@@ -42,9 +43,8 @@ body{
 .box-slider-3{
     left: -200%;
 }
-.img-slider{
-    width: 100%;
-}
+
+
 .box-icon-chevron-left, .box-icon-chevron-right{
     color: rgb(0, 0, 0);
     font-size: 3.5em;
@@ -76,20 +76,60 @@ body{
     height: 20px;
 }
 .signal{
-    margin-top: 345px;
-    width: 120px;
-    height: 20px;
-    background-color: red;
-    padding: 0 25px;
-    z-index: 40;
+    width: 26px;
+    height: 26px;
+    border-radius: 10px;
+    background-color: rgb(248, 248, 248);
+    z-index: 20;
+    
+}
+.signal-select{
+background-color: rgb(182, 182, 185);
 }
 .signal1{
-    margin-left: 1400px;
+    margin-top: 300px;
+    margin-left: 1300px;
+    position: absolute;
 }
 .signal2{
-    margin-left: 20px;
+    margin-top: 300px;
+    margin-left: 1400px;
+    position: absolute;
 }
 .signal3{
-    margin-left: 20px;
+    margin-top: 300px;
+    margin-left: 1500px;
+    position: absolute;
 }
 
+
+@media screen and (max-width:768px){
+    .page-box-slider{ 
+        width: 100%;
+        overflow: hidden;
+    }
+    .box-img1{
+        margin-bottom: -200px;
+        padding: 0 100px;
+    }
+    .box-img2{
+        padding: 0 100px;
+    }
+    .box-img3{
+        padding: 0 100px;
+    }
+    .signal1{
+        margin-left: 1400px;
+        
+    }
+    .signal2{
+        margin-left: 20px;
+        
+    }
+    .signal3{
+        margin-left: 20px;
+        
+       
+    }
+   
+}
