@@ -32,7 +32,7 @@ menos.addEventListener("click", function () {
         auxCant--;
         cantidad.value = auxCant;
 
-        subtotal.innerHTML = auxCant - auxTotal;
+        subtotal.innerHTML = auxCant + auxTotal;
 
         productos.innerHTML = auxCant;
 
